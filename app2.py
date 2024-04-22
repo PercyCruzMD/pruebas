@@ -7,11 +7,10 @@ if 'db' not in st.session_state:
     st.session_state.db = pd.DataFrame(columns=["Fecha", "Nombre", "Edad", "Diagnóstico", "Cirugía", "Cirujano", "Sala", "Tipo", "Material Extra", "Material Disponible"])
 
 # Título y logos
-col1, col2 = st.columns([0.5, 2])
-col2.title("Programación quirúrgica - GEA")
+st.title("Programación quirúrgica - GEA")
+st.subheader("Departamento de enfermería)
 
 # Mostrar la tabla de pacientes
-st.write("Programación de cirugías")
 st.dataframe(st.session_state.db.reset_index(drop=True))
 
 # Función para agregar pacientes a la "base de datos"
