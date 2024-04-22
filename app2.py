@@ -8,7 +8,7 @@ if 'db' not in st.session_state:
 
 # Título y logos
 st.title("Programación quirúrgica - GEA")
-st.subheader("Departamento de enfermería)
+st.subheader("Departamento de enfermería")
 
 # Mostrar la tabla de pacientes
 st.dataframe(st.session_state.db.reset_index(drop=True))
