@@ -8,7 +8,6 @@ if 'db' not in st.session_state:
 
 # Título y logos
 col1, col2 = st.columns([0.5, 2])
-col1.image("https://github.com/PercyCruzMD/pruebas/blob/main/images/Gea2.png")  # Asegúrate de que la ruta a la imagen es correcta
 col2.title("Programación quirúrgica - GEA")
 
 # Mostrar la tabla de pacientes
